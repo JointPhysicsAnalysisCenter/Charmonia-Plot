@@ -9,4 +9,4 @@ This is a simple python code that plots:
 
 3 - Charmonium spectrum before X(3872)
 
-The code is very raw right now. Hope to improve it in the future to make it easy to update.
+The code is very raw right now. Hope to improve it in the future to make it easy to update with new states.
