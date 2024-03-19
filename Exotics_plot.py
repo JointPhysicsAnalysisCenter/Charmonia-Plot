@@ -105,7 +105,7 @@ dijpsi_names = [r'$X(6900)$']
 zc_spin  = [10, 11, 11, 11, 11, 9, 9]
 zc_mass  = [4239., 3887.1,4196., 4478., 4020., 4051, 4248]
 zc_names = [r'$R_{c0}(4240)$',r'$T_{c\bar{c}1}(3900)$',r'$T_{c\bar{c}1}(4200)$',r'$T_{c\bar{c}1}(4430)$',r'$T_{c\bar{c}1}(4020)$',
-            r'$Z(4050)$',r'$Z(4250)$']
+            r'$T_{c\bar{c}1}(4050)$',r'$T_{c\bar{c}1}(4250)$']
 
 ##############################################################################   
 #   Zcs
@@ -281,7 +281,7 @@ for i in range(tamano):
     nombre = zc_names[i]
     y = zc_mass[i]
     x = zc_spin[i]        
-    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$Z(4250)$':
+    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$T_{c\bar{c}1}(4250)$':
         plotstate(0,0,x,y,deltax,-60,color,ancho,tamano_letra,'solid',nombre) 
     else:
         plotstate(0,0,x,y,deltax,deltay,color,ancho,tamano_letra,'solid',nombre)
@@ -527,7 +527,7 @@ for i in range(tamano):
     nombre = zc_names[i]
     y = zc_mass[i]
     x = zc_spin[i]        
-    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$Z(4250)$':
+    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$T_{c\bar{c}1}(4250)$':
         plotstate(0,0,x,y,deltax,-60,color,ancho,tamano_letra,'solid',nombre) 
     else:
         plotstate(0,0,x,y,deltax,deltay,color,ancho,tamano_letra,'solid',nombre)
