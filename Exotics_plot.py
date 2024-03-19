@@ -78,7 +78,7 @@ charmonia_post2003_names_noexo = [r'$\chi_{c0}(3860)$',r'$\psi_2(3823)$',r'$\chi
 
 charmonia_post2003_spin_exo = [6, 6,6,2,3, 3, 3, 2, 3, 2]
 charmonia_post2003_mass_exo = [3871.65,4146.8,4274,4704.,4368.,4630.,4220.,3922,4390, 4506. ]
-charmonia_post2003_names_exo = [r'$X(3872)$',r'$X(4140)$',r'$\chi_{c1}(4274)$',
+charmonia_post2003_names_exo = [r'$\chi_{c1}(3872)$',r'$\chi_{c1}(4140)$',r'$\chi_{c1}(4274)$',
                                 r'$\chi_{c0}(4700)$',r'$\psi(4360)$',r'$\psi(4660)$',
                                 r'$Y(4230)$',r'$X(3915)$',r'$Y(4390)$',r'$\chi_{c0}(4500)$']
 
@@ -96,7 +96,7 @@ tcc_names = [r'$T_{cc}$']
 
 dijpsi_spin = [0]
 dijpsi_mass = [6900]
-dijpsi_names = [r'$X(6900)$']
+dijpsi_names = [r'$T_{cc\bar{c}\bar{c}}(6900)$']
 
 ##############################################################################   
 #   Z
@@ -104,8 +104,8 @@ dijpsi_names = [r'$X(6900)$']
 
 zc_spin  = [10, 11, 11, 11, 11, 9, 9]
 zc_mass  = [4239., 3887.1,4196., 4478., 4020., 4051, 4248]
-zc_names = [r'$R_{c0}(4240)$',r'$T_{c\bar{c}1}(3900)$',r'$T_{c\bar{c}1}(4200)$',r'$T_{c\bar{c}1}(4430)$',r'$T_{c\bar{c}1}(4020)$',
-            r'$T_{c\bar{c}1}(4050)$',r'$T_{c\bar{c}1}(4250)$']
+zc_names = [r'$T_{c\bar{c}0}(4240)$',r'$T_{c\bar{c}1}(3900)$',r'$T_{c\bar{c}1}(4200)$',r'$T_{c\bar{c}1}(4430)$',r'$T_{c\bar{c}}(4020)$',
+            r'$T_{c\bar{c}}(4050)$',r'$T_{c\bar{c}}(4250)$']
 
 ##############################################################################   
 #   Zcs
@@ -281,7 +281,7 @@ for i in range(tamano):
     nombre = zc_names[i]
     y = zc_mass[i]
     x = zc_spin[i]        
-    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$Z(4250)$':
+    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$T_{c\bar{c}}(4250)$':
         plotstate(0,0,x,y,deltax,-60,color,ancho,tamano_letra,'solid',nombre) 
     else:
         plotstate(0,0,x,y,deltax,deltay,color,ancho,tamano_letra,'solid',nombre)
@@ -527,7 +527,7 @@ for i in range(tamano):
     nombre = zc_names[i]
     y = zc_mass[i]
     x = zc_spin[i]        
-    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$T_{c\bar{c}1}(4250)$':
+    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$T_{c\bar{c}}(4250)$':
         plotstate(0,0,x,y,deltax,-60,color,ancho,tamano_letra,'solid',nombre) 
     else:
         plotstate(0,0,x,y,deltax,deltay,color,ancho,tamano_letra,'solid',nombre)
