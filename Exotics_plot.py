@@ -78,7 +78,7 @@ charmonia_post2003_names_noexo = [r'$\chi_{c0}(3860)$',r'$\psi_2(3823)$',r'$\chi
 
 charmonia_post2003_spin_exo = [6, 6,6,2,3, 3, 3, 2, 3, 2]
 charmonia_post2003_mass_exo = [3871.65,4146.8,4274,4704.,4368.,4630.,4220.,3922,4390, 4506. ]
-charmonia_post2003_names_exo = [r'$X(3872)$',r'$X(4140)$',r'$\chi_{c1}(4274)$',
+charmonia_post2003_names_exo = [r'$\chi_{c1}(3872)$',r'$\chi_{c1}(4140)$',r'$\chi_{c1}(4274)$',
                                 r'$\chi_{c0}(4700)$',r'$\psi(4360)$',r'$\psi(4660)$',
                                 r'$Y(4230)$',r'$X(3915)$',r'$Y(4390)$',r'$\chi_{c0}(4500)$']
 
@@ -96,7 +96,7 @@ tcc_names = [r'$T_{cc}$']
 
 dijpsi_spin = [0]
 dijpsi_mass = [6900]
-dijpsi_names = [r'$X(6900)$']
+dijpsi_names = [r'$T_{cc\bar{c}\bar{c}}(6900)$']
 
 ##############################################################################   
 #   Z
@@ -104,8 +104,8 @@ dijpsi_names = [r'$X(6900)$']
 
 zc_spin  = [10, 11, 11, 11, 11, 9, 9]
 zc_mass  = [4239., 3887.1,4196., 4478., 4020., 4051, 4248]
-zc_names = [r'$R_{c0}(4240)$',r'$T_{c\bar{c}1}(3900)$',r'$T_{c\bar{c}1}(4200)$',r'$T_{c\bar{c}1}(4430)$',r'$T_{c\bar{c}1}(4020)$',
-            r'$T_{c\bar{c}1}(4050)$',r'$T_{c\bar{c}1}(4250)$']
+zc_names = [r'$T_{c\bar{c}0}(4240)$',r'$T_{c\bar{c}1}(3900)$',r'$T_{c\bar{c}1}(4200)$',r'$T_{c\bar{c}1}(4430)$',r'$T_{c\bar{c}}(4020)$',
+            r'$T_{c\bar{c}}(4050)$',r'$T_{c\bar{c}}(4250)$']
 
 ##############################################################################   
 #   Zcs
@@ -113,7 +113,7 @@ zc_names = [r'$R_{c0}(4240)$',r'$T_{c\bar{c}1}(3900)$',r'$T_{c\bar{c}1}(4200)$',
 
 zcs_spin  = [12, 12,12]
 zcs_mass  = [4220.,4003.,3985]
-zcs_names = [r'$Z_{cs}(4220)$',r'$Z_{cs}(4000)$',r'$Z_{cs}(3985)$']
+zcs_names = [r'$T_{c\bar{c}\bar{s}}(4220)$',r'$T_{c\bar{c}\bar{s}}(4000)$',r'$T_{c\bar{c}\bar{s}}(3985)$']
 
 ##############################################################################   
 #   Pentaquarks
@@ -138,7 +138,7 @@ pc_names = [r'$P_{c\bar{c}}(4312)$',r'$P_{c\bar{c}}(4380)$',r'$P_{c\bar{c}}(4440
 
 espines = ['$?^{??}$','$0^{-+}$','$0^{++}$','$1^{--}$','$1^{-+}$',
            '$1^{+-}$','$1^{++}$','$2^{--}$','$2^{++}$',
-           '$?^{??}$','$0^{--}$','$1^{+-}$','$Z_{cs}$',r'$P_{c\bar{c}}$']
+           '$?^{??}$','$0^{--}$','$1^{+-}$',r'$T_{c\bar{c}\bar{s}}$',r'$P_{c\bar{c}}$']
 espines_num = [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
 xlim_dw, xlim_up = -1.5, 16.5
 
@@ -281,7 +281,7 @@ for i in range(tamano):
     nombre = zc_names[i]
     y = zc_mass[i]
     x = zc_spin[i]        
-    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$T_{c\bar{c}1}(4250)$':
+    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$T_{c\bar{c}}(4250)$':
         plotstate(0,0,x,y,deltax,-60,color,ancho,tamano_letra,'solid',nombre) 
     else:
         plotstate(0,0,x,y,deltax,deltay,color,ancho,tamano_letra,'solid',nombre)
@@ -296,7 +296,7 @@ for i in range(tamano):
     nombre = zcs_names[i]
     y = zcs_mass[i]
     x = zcs_spin[i]
-    if nombre ==r'$Z_{cs}(3985)$':
+    if nombre ==r'$T_{c\bar{c}\bar{s}}(3985)$':
         plotstate(0,0,x,y,deltax,-50,color,ancho,tamano_letra,'solid',' ')  
         subfig[0,0].text(x+deltax+0.1,y-50,nombre,fontsize=tamano_letra)
     else:
@@ -398,7 +398,7 @@ fig.savefig("exotics_review.png", bbox_inches='tight')
 
 espines = ['$?^{??}$','$0^{-+}$','$0^{++}$','$1^{--}$','$1^{-+}$',
            '$1^{+-}$','$1^{++}$','$2^{--}$','$2^{++}$',
-           '$?^{??}$','$0^{--}$','$1^{+-}$','$Z_{cs}$']
+           '$?^{??}$','$0^{--}$','$1^{+-}$',r'$T_{c\bar{c}\bar{s}}$']
 espines_num = [0,1,2,3,4,5,6,7,8,9,10,11,12]
 
 fig, subfig = plt.subplots(2,2,figsize=(15,10))
@@ -527,7 +527,7 @@ for i in range(tamano):
     nombre = zc_names[i]
     y = zc_mass[i]
     x = zc_spin[i]        
-    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$T_{c\bar{c}1}(4250)$':
+    if nombre==r'$T_{c\bar{c}1}(4200)$' or nombre==r'$T_{c\bar{c}}(4250)$':
         plotstate(0,0,x,y,deltax,-60,color,ancho,tamano_letra,'solid',nombre) 
     else:
         plotstate(0,0,x,y,deltax,deltay,color,ancho,tamano_letra,'solid',nombre)
@@ -542,7 +542,7 @@ for i in range(tamano):
     nombre = zcs_names[i]
     y = zcs_mass[i]
     x = zcs_spin[i]
-    if nombre ==r'$Z_{cs}(3985)$':
+    if nombre ==r'$T_{c\bar{c}\bar{s}}(3985)$':
         plotstate(0,0,x,y,deltax,-50,color,ancho,tamano_letra,'solid',' ')  
         subfig[0,0].text(x+deltax+0.1,y-50,nombre,fontsize=tamano_letra)
     else:
