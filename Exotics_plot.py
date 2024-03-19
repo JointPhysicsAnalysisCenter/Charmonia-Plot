@@ -121,7 +121,7 @@ zcs_names = [r'$Z_{cs}(4220)$',r'$Z_{cs}(4000)$',r'$Z_{cs}(3985)$']
 
 pc_spin  = [13, 13, 13, 13]
 pc_mass  = [4312., 4380,4440., 4457.]
-pc_names = [r'$P_c(4312)$',r'$P_c(4380)$',r'$P_c(4440)$',r'$P_c(4457)$']
+pc_names = [r'$P_{c\bar{c}}(4312)$',r'$P_{c\bar{c}}(4380)$',r'$P_{c\bar{c}}(4440)$',r'$P_{c\bar{c}}(4457)$']
 
 
 #%%
@@ -138,7 +138,7 @@ pc_names = [r'$P_c(4312)$',r'$P_c(4380)$',r'$P_c(4440)$',r'$P_c(4457)$']
 
 espines = ['$?^{??}$','$0^{-+}$','$0^{++}$','$1^{--}$','$1^{-+}$',
            '$1^{+-}$','$1^{++}$','$2^{--}$','$2^{++}$',
-           '$?^{??}$','$0^{--}$','$1^{+-}$','$Z_{cs}$','$P_c$']
+           '$?^{??}$','$0^{--}$','$1^{+-}$','$Z_{cs}$',r'$P_{c\bar{c}}$']
 espines_num = [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
 xlim_dw, xlim_up = -1.5, 16.5
 
@@ -313,7 +313,7 @@ for i in range(tamano):
     nombre = pc_names[i]
     y = pc_mass[i]
     x = pc_spin[i]  
-    if nombre ==r'$P_c(4457)$':
+    if nombre ==r'$P_{c\bar{c}}(4457)$':
         plotstate(0,0,x,y,deltax,50,color,ancho,tamano_letra,'solid',nombre)   
     else:
         plotstate(0,0,x,y,deltax,-50,color,ancho,tamano_letra,'solid',' ') 
