@@ -8,7 +8,7 @@ Our goal is to provide an accessible and good looking review plot for physicists
 
 The plotting script produces
 - [`exotics_review.png`](https://jointphysicsanalysiscenter.github.io/Charmonia-Plot/exotics_review.png): Current state of heavy-quark hadron resonances with charm with the $P_{c\bar{c}}$ states,
-- [`exotics_tc.png`](https://jointphysicsanalysiscenter.github.io/Charmonia-Plot/exotics_tc.png): Current state of heavy-quark hadron resonances with charm w/o the $P_{c\bar{c}}$ states, 
+- [`exotics_mesons.png`](https://jointphysicsanalysiscenter.github.io/Charmonia-Plot/exotics_meson.png): Current state of heavy-quark hadron resonances with charm w/o the $P_{c\bar{c}}$ states, 
 - [`charmonia_pre2003.png`](https://jointphysicsanalysiscenter.github.io/Charmonia-Plot/charmonia_pre2003.png): Charmonium spectrum before X(3872)
 
 ## Installation
