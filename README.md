@@ -6,6 +6,8 @@ The Charmonia Plot project, developed by the Joint Physics Analysis Center, is d
 This repository contains code and resources for generating plots of exotic states with their masses and quantum numbers.
 Our goal is to provide an accessible and good looking review plot for physicists and researchers.
 
+Feel free to download, modify and reuse the codes and plots. If you use it in talks or manuscripts we would appreciate if you mention it is an updated version of the one published in: JPAC, Progress in Particle and Nuclear Physics 127 (2022) 103981, https://inspirehep.net/literature/1997164
+
 The plotting script produces
 - [`exotics_review.png`](https://jointphysicsanalysiscenter.github.io/Charmonia-Plot/exotics_review.png): Current state of heavy-quark hadron resonances with charm with the $P_{c\bar{c}}$ states,
 - [`exotics_mesons.png`](https://jointphysicsanalysiscenter.github.io/Charmonia-Plot/exotics_meson.png): Current state of heavy-quark hadron resonances with charm w/o the $P_{c\bar{c}}$ states, 
@@ -45,6 +47,6 @@ This project is licensed under the [MIT License](LICENSE). See the LICENSE file 
 
 ## Contact
 
-Please contact [cefera@gmail.com](mailto:cefera@gmail.com) for any questions.
+Please contact [cefera@gmail.com](mailto:cefera@gmail.com) for any questions or suggestions
 
 For more information about the Joint Physics Analysis Center and our projects, visit our [website](https://www.jpac-physics.org/).
